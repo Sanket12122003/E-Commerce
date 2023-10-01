@@ -2,16 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #e3e6f3;
+
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
 }
 
 
 
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+
+
+body {
+    width: 100%;
+}
+
+  
+       .box {
+          margin-top: 0px;
+          font-size: 5rem;
+          display: flex;
+          justify-content: center;
+          box-sizing: content-box;
+          border-radius: 48px;
+      }
+     
+/* header */
 #header {
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 80px;
+    padding: 2px 32px;
     background-color: #E3E6F3;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -36,7 +77,7 @@
   }
   .logo span{
     font-size: 48px;
-    color: #409734;
+    color:  #409734;
   }
 #navbar li {
     list-style: none;
@@ -66,6 +107,17 @@
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+#bar{
+    height: 25px;
+    width: 25px;
 }
 
 #product1{
@@ -135,4 +187,63 @@ h2 {
 }
 #feature .fe-box:nth-child(6) h4 {
     background-color:#fff2e5;
+}
+
+@media (max-width: 799px) {
+    
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3 ;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px ;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+       
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+   
+    #header{
+     width: 105%;
+    }
+    #feature{
+       margin-left: 20px;
+    }
+       
+    @media (max-width: 490px){
+     body{
+            width: 90%;
+          }
+     #header{
+              width: 110%;
+             }
+    #feature .fe-box{
+             height: 205px;
+    }
+    }
+
+   
 }
