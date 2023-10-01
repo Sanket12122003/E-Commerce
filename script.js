@@ -1,3 +1,18 @@
+const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
+
+if(bar){
+    bar.addEventListener('click',()=>{
+nav.classList.add('active');
+    })
+}
+if(close){
+    close.addEventListener('click',()=>{
+nav.classList.remove('active');
+    })
+}
+
 var deadline = new Date("December 7, 2024 24:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
