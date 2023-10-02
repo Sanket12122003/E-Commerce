@@ -293,6 +293,7 @@ footer {
     }
     footer{
         justify-content: center;
+        margin-top: 10px;
     }
     h2{
         font-size: 30px;
@@ -303,7 +304,5 @@ footer {
    footer a{
     font-size: 18px;
    }
-   footer .col{
-    margin-top: 15px;
-   }
+  
 }
